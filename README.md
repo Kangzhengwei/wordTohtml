@@ -1,8 +1,11 @@
-# wordTohtml
-wordtohtml
+# wordTohtmlwordtohtml  
+
 dependencies
-    implementation 'io.github.kangzhengwei:wordtohtml:1.0.1'
-    and
+
+   implementation 'io.github.kangzhengwei:wordtohtml:1.0.1'
+   
+use
+
 WordUtil(filePath, htmlPath)
 binding.webView.loadUrl("file:///$htmlPath")
 
