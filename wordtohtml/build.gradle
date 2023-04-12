@@ -1,8 +1,10 @@
 plugins {
+    id 'maven-publish'
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
-
+//apply from: "${rootProject.projectDir}/publish-mavencentral.gradle"
+//apply from: "${rootProject.projectDir}/alimaven.gradle"
 android {
     namespace 'com.kzw.wordtohtml'
     compileSdk 32

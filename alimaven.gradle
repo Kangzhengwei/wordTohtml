@@ -1,0 +1,36 @@
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            plugin(MavenPublication) {
+                from components.release
+                artifact androidSourceJar
+                groupId = 'io.github.kzw'
+                artifactId = 'wordtohtml'
+                version = '1.0.0'
+            }
+        }
+        repositories {
+            maven {
+                url = 'https://packages.aliyun.com/maven/repository/2363432-release-Jp7i3F/'
+                credentials {
+                    username = '6434fe0b2ca4e1cd30d2f402'
+                    password = 'UvpclaOkpOgO'
+                }
+            }
+            maven {
+                url = 'https://packages.aliyun.com/maven/repository/2363432-snapshot-csJmuJ/'
+                credentials {
+                    username = '6434fe0b2ca4e1cd30d2f402'
+                    password = 'UvpclaOkpOgO'
+                }
+            }
+        }
+    }
+}
+
+task androidSourceJar(type: Jar) {
+    from android.sourceSets.main.java.getSrcDirs()//源码路径
+    archiveClassifier.set("sources")
+}

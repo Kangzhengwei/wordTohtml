@@ -10,6 +10,23 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username = '6434fe0b2ca4e1cd30d2f402'
+                password = 'UvpclaOkpOgO'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2363432-release-Jp7i3F/'
+        }
+        maven {
+            credentials {
+                username = '6434fe0b2ca4e1cd30d2f402'
+                password = 'UvpclaOkpOgO'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2363432-snapshot-csJmuJ/'
+        }
     }
 }
 include ':app'
