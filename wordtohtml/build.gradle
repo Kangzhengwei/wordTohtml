@@ -1,9 +1,8 @@
 plugins {
-    id 'maven-publish'
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
-//apply from: "${rootProject.projectDir}/publish-mavencentral.gradle"
+apply from: "${rootProject.projectDir}/publish-mavencentral.gradle"
 //apply from: "${rootProject.projectDir}/alimaven.gradle"
 android {
     namespace 'com.kzw.wordtohtml'
@@ -13,9 +12,10 @@ android {
         minSdk 19
         targetSdk 32
         versionCode 1
-        versionName "1.0"
+        versionName PUBLISH_VERSION
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
