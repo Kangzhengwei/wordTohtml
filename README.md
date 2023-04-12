@@ -6,8 +6,10 @@ dependencies
    
 use
 
-WordUtil(filePath, htmlPath)
-binding.webView.loadUrl("file:///$htmlPath")
+WordUtil(filePath, htmlPath);
+
+webView.loadUrl("file:///$htmlPath");
 
 filePath word filepath
+
 htmlpath output html path
