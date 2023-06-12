@@ -2,26 +2,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp" >
+    android:padding="5dp">
 
     <Button
-        android:id="@+id/btn_text"
+        android:id="@+id/btn_word_doc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        android:text="只显示文本"
+        android:layout_marginTop="30dp"
+        android:text="word doc"
         android:textColor="#000000"
         android:textSize="17sp" />
-    
+
     <Button
-        android:id="@+id/btn_html"
+        android:id="@+id/btn_word_docx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        android:text="显示完整图文"
+        android:layout_marginTop="30dp"
+        android:text="word docx"
         android:textColor="#000000"
         android:textSize="17sp" />
-    
+
+    <Button
+        android:id="@+id/btn_excel_xls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="excel xls"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/btn_excel_xlsx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="excel xlsx"
+        android:textColor="#000000"
+        android:textSize="17sp" />
 </LinearLayout>

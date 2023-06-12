@@ -10,8 +10,9 @@ import android.webkit.WebView;
 
 import androidx.core.app.ActivityCompat;
 
-import com.kzw.wordtohtml.FileUtil;
-import com.kzw.wordtohtml.WordUtil;
+import com.kzw.wordtohtml.excel.ExcelToHtmlUtils;
+import com.kzw.wordtohtml.util.FileUtil;
+import com.kzw.wordtohtml.word.WordUtil;
 
 
 public class HtmlActivity extends Activity implements OnClickListener {
@@ -34,11 +35,13 @@ public class HtmlActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_open) {
-            String filePath = documentPath + "/t3.doc";
+            String filePath = documentPath + "/test1.docx";
             String htmlPath = FileUtil.createFile(documentPath, FileUtil.getFileName(filePath) + ".html");
             new WordUtil(filePath, htmlPath);
             Log.d(TAG, "htmlPath=" + htmlPath);
             wv_content.loadUrl("file:///" + htmlPath);
+            /////////////////////////////////
+
         }
     }
 }
