@@ -35,6 +35,4 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'stax:stax-api:1.0.1'
-
 }
